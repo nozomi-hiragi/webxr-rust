@@ -16,5 +16,8 @@ module.exports = {
             crateDirectory: path.resolve(__dirname, ".")
         })
     ],
+    devServer: {
+        host: '0.0.0.0',
+    },
     mode: 'development'
 };

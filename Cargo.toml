@@ -6,4 +6,67 @@ edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[lib]
+crate-type = ["cdylib"]
+
 [dependencies]
+futures = "0.3.4"
+js-sys = "0.3.50"
+wasm-bindgen = {version = "0.2.73", features = ["serde-serialize"]}
+wasm-bindgen-futures = "0.4.23"
+serde = { version = "1.0.80", features = ["derive"] }
+serde_derive = "^1.0.59"
+console_error_panic_hook = "0.1.6"
+web-sys = { version = "0.3.36", features = [
+  'Document',
+  'Element',
+  'Gpu',
+  'Headers',
+  'HtmlCanvasElement',
+  'Navigator',
+  'Request',
+  'RequestInit',
+  'RequestMode',
+  'Response',
+  'WebGl2RenderingContext',
+  'WebGlRenderingContext',
+  'WebGlProgram',
+  'WebGlShader',
+  'WebGlBuffer',
+  'WebGlActiveInfo',
+  'WebGlUniformLocation',
+  'WebGlFramebuffer',
+  'Window',
+  'Xr',
+  'XrBoundedReferenceSpace',
+  'XrEye',
+  'XrFrame',
+  'XrHandedness',
+  'XrInputSource',
+  'XrInputSourceArray',
+  'XrInputSourceEvent',
+  'XrInputSourceEventInit',
+  'XrInputSourcesChangeEvent',
+  'XrPose',
+  'XrReferenceSpace',
+  'XrReferenceSpaceEvent',
+  'XrReferenceSpaceEventInit',
+  'XrReferenceSpaceType',
+  'XrRenderState',
+  'XrRenderStateInit',
+  'XrRigidTransform',
+  'XrSession',
+  'XrSessionEvent',
+  'XrSessionEventInit',
+  'XrSessionInit',
+  'XrSessionMode',
+  'XrSpace',
+  'XrTargetRayMode',
+  'XrView',
+  'XrViewerPose',
+  'XrViewport',
+  'XrVisibilityState',
+  'XrWebGlLayer',
+  'XrWebGlLayerInit',
+  'console'
+]}
